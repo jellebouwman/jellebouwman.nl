@@ -1,102 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- SEO + descriptive stuff -->
+        <title>Jelle Bouwman</title>
+        <meta name="description" content="Jelle Bouwman - Software Engineer" />
+        <meta
+            name="keywords"
+            content="Jelle Bouwman, Software Engineer, Front-end, Back-end, Full-stack, Utrecht, The Netherlands"
+        />
+        <meta name="author" content="Jelle Bouwman" />
 
-  <!-- SEO + descriptive stuff -->
-  <title>Jelle Bouwman</title>
-  <meta name="description" content="Jelle Bouwman - Software Engineer">
-  <meta name="keywords"
-    content="Jelle Bouwman, Software Engineer, Front-end, Back-end, Full-stack, Utrecht, The Netherlands">
-  <meta name="author" content="Jelle Bouwman">
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://jellebouwman.nl" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Jelle Bouwman" />
+        <meta
+            property="og:description"
+            content="Jelle Bouwman - Software Engineer"
+        />
+        <meta
+            property="og:image"
+            content="https://jellebouwman.nl/jelle.webp"
+        />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://jellebouwman.nl">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Jelle Bouwman">
-  <meta property="og:description" content="Jelle Bouwman - Software Engineer">
-  <meta property="og:image" content="https://jellebouwman.nl/jelle.webp">
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="jellebouwman.nl" />
+        <meta property="twitter:url" content="https://jellebouwman.nl" />
+        <meta name="twitter:title" content="Jelle Bouwman" />
+        <meta
+            name="twitter:description"
+            content="Jelle Bouwman - Software Engineer"
+        />
+        <meta
+            name="twitter:image"
+            content="https://jellebouwman.nl/jelle.webp"
+        />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="jellebouwman.nl">
-  <meta property="twitter:url" content="https://jellebouwman.nl">
-  <meta name="twitter:title" content="Jelle Bouwman">
-  <meta name="twitter:description" content="Jelle Bouwman - Software Engineer">
-  <meta name="twitter:image" content="https://jellebouwman.nl/jelle.webp">
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐙</text></svg>"
+        />
 
+        <!-- Some external resources I like -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            !(function (t, e) {
+                var o, n, p, r;
+                e.__SV ||
+                    ((window.posthog = e),
+                    (e._i = []),
+                    (e.init = function (i, s, a) {
+                        function g(t, e) {
+                            var o = e.split(".");
+                            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                                (t[e] = function () {
+                                    t.push(
+                                        [e].concat(
+                                            Array.prototype.slice.call(
+                                                arguments,
+                                                0,
+                                            ),
+                                        ),
+                                    );
+                                });
+                        }
+                        ((p = t.createElement("script")).type =
+                            "text/javascript"),
+                            (p.async = !0),
+                            (p.src =
+                                s.api_host.replace(
+                                    ".i.posthog.com",
+                                    "-assets.i.posthog.com",
+                                ) + "/static/array.js"),
+                            (r =
+                                t.getElementsByTagName(
+                                    "script",
+                                )[0]).parentNode.insertBefore(p, r);
+                        var u = e;
+                        for (
+                            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                                u.people = u.people || [],
+                                u.toString = function (t) {
+                                    var e = "posthog";
+                                    return (
+                                        "posthog" !== a && (e += "." + a),
+                                        t || (e += " (stub)"),
+                                        e
+                                    );
+                                },
+                                u.people.toString = function () {
+                                    return u.toString(1) + ".people (stub)";
+                                },
+                                o =
+                                    "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId setPersonProperties".split(
+                                        " ",
+                                    ),
+                                n = 0;
+                            n < o.length;
+                            n++
+                        )
+                            g(u, o[n]);
+                        e._i.push([i, s, a]);
+                    }),
+                    (e.__SV = 1));
+            })(document, window.posthog || []);
+            posthog.init("phc_Xc4aB8uQTOwT9j0Jtagfbn4YuvEzMiPMIzaZFKsGXkE", {
+                api_host: "https://eu.i.posthog.com",
+                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+            });
+        </script>
 
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐙</text></svg>">
+        <!-- Styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- Some external resources I like -->
-  <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
 
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+            }
 
-  <!-- Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+            h1,
+            h3 {
+                font-family: "Ubuntu", sans-serif;
+            }
+        </style>
+    </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-
-    h1,
-    h3 {
-      font-family: 'Ubuntu', sans-serif;
-    }
-  </style>
-
-</head>
-
-
-<body
-  class="min-h-screen  bg-gradient-to-t from-gray-50 via-gray-100 to-gray-200 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black dark:text-white">
-  <main class="container max-w-xl mx-auto pt-20 pb-10 px-10">
-    <div class="flex flex-col md:flex-row justify-center md:justify-between md:items-center gap-y-10 mb-10">
-      <img class="self-center rounded-md" height="250" width="250" src="jelle.webp" alt="Image of Jelle Bouwman">
-      <div>
-        <h1 class="text-center md:text-right text-xl">Jelle Bouwman</h1>
-        <h2 class="text-center md:text-right text-sm">Software engineer</h2>
-        <p class="flex justify-center md:justify-end gap-x-4">
-          <a aria-label="My GitHub profile" class="focus:text-blue-500 hover:text-blue-500"
-            href="https://github.com/jellebouwman" target="_blank"><span class="fa fa-github text-lg text-right"
-              role="img"></span></a>
-          <a aria-label="My current assignment" class="focus:text-blue-500 hover:text-blue-500"
-            href="https://studio.iterative.ai" target="_blank"> <span class="fa fa-suitcase text-lg text-right"
-              role="img"></span></a>
-          <a aria-label="My LinkedIN profile" class="focus:text-blue-500 hover:text-blue-500"
-            href="https://linkedin.com/in/jelle-bouwman" target="_blank"> <span
-              class="fa fa-linkedin text-lg text-right" role="img"></span></a>
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col gap-4 text-justify">
-      <h3>Hi, I'm Jelle! 👋</h3>
-      <p>I'm a software engineer based in Utrecht, the Netherlands.</p>
-      <p>
-        Currently, I work for <a class="text-blue-500 hover:underline" href="https://peanut-app.io"
-          target="_blank">Peanut</a>
-        on their web applications
-        whilst specializing in front-end technologies.
-        However, I'm also eager to expand my skill set and explore new areas.
-      </p>
-      <p>In software engineering teams I also enjoy the 'meta' stuff like optimizing team's processes and tools.</p>
-      <p>One of my biggest passions is music. I thoroughly enjoy creating, listening to, and sharing music with those
-        around me. If you're curious about my musical preferences, you can check out my listening history on
-        <a class="text-blue-500 hover:underline" href="https://www.last.fm/user/jellebouwman" target="_blank">
-          my Last.FM
-          profile</a>
-        .
-    </div>
-  </main>
-</body>
-
+    <body
+        class="min-h-screen bg-gradient-to-t from-gray-50 via-gray-100 to-gray-200 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black dark:text-white"
+    >
+        <main class="container max-w-xl mx-auto pt-20 pb-10 px-10">
+            <div
+                class="flex flex-col md:flex-row justify-center md:justify-between md:items-center gap-y-10 mb-10"
+            >
+                <img
+                    class="self-center rounded-md"
+                    height="250"
+                    width="250"
+                    src="jelle.webp"
+                    alt="Image of Jelle Bouwman"
+                />
+                <div>
+                    <h1 class="text-center md:text-right text-xl">
+                        Jelle Bouwman
+                    </h1>
+                    <h2 class="text-center md:text-right text-sm">
+                        Software engineer
+                    </h2>
+                    <p class="flex justify-center md:justify-end gap-x-4">
+                        <a
+                            aria-label="My GitHub profile"
+                            class="focus:text-blue-500 hover:text-blue-500"
+                            href="https://github.com/jellebouwman"
+                            target="_blank"
+                            ><span
+                                class="fa fa-github text-lg text-right"
+                                role="img"
+                            ></span
+                        ></a>
+                        <a
+                            aria-label="My current assignment"
+                            class="focus:text-blue-500 hover:text-blue-500"
+                            href="https://studio.iterative.ai"
+                            target="_blank"
+                        >
+                            <span
+                                class="fa fa-suitcase text-lg text-right"
+                                role="img"
+                            ></span
+                        ></a>
+                        <a
+                            aria-label="My LinkedIN profile"
+                            class="focus:text-blue-500 hover:text-blue-500"
+                            href="https://linkedin.com/in/jelle-bouwman"
+                            target="_blank"
+                        >
+                            <span
+                                class="fa fa-linkedin text-lg text-right"
+                                role="img"
+                            ></span
+                        ></a>
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 text-justify">
+                <h3>Hi, I'm Jelle! 👋</h3>
+                <p>
+                    I'm a software engineer based in Utrecht, the Netherlands.
+                </p>
+                <p>
+                    Currently, I work for
+                    <a
+                        class="text-blue-500 hover:underline"
+                        href="https://peanut-app.io"
+                        target="_blank"
+                        >Peanut</a
+                    >
+                    on their web applications whilst specializing in front-end
+                    technologies. However, I'm also eager to expand my skill set
+                    and explore new areas.
+                </p>
+                <p>
+                    In software engineering teams I also enjoy the 'meta' stuff
+                    like optimizing team's processes and tools.
+                </p>
+                <p>
+                    One of my biggest passions is music. I thoroughly enjoy
+                    creating, listening to, and sharing music with those around
+                    me. If you're curious about my musical preferences, you can
+                    check out my listening history on
+                    <a
+                        class="text-blue-500 hover:underline"
+                        href="https://www.last.fm/user/jellebouwman"
+                        target="_blank"
+                    >
+                        my Last.FM profile</a
+                    >
+                    .
+                </p>
+            </div>
+        </main>
+    </body>
 </html>
